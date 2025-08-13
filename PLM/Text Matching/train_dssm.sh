@@ -1,0 +1,13 @@
+python train_dssm.py \
+    --model "nghuyong/ernie-3.0-base-zh" \
+    --train_path "D:/Data/master/Freshmen Coding Assignment/NLP/comment_classify/train.txt" \
+    --dev_path "D:/Data/master/Freshmen Coding Assignment/NLP/comment_classify/dev.txt" \
+    --save_dir "D:/Jupyter notebook file/硕士/PLM/Text Matching/DSSM" \
+    --img_log_dir "D:/Jupyter notebook file/硕士/PLM/Text Matching/DSSM" \
+    --img_log_name "ERNIE-DSSM" \
+    --batch_size 8 \
+    --max_seq_len 128 \
+    --valid_steps 50 \
+    --logging_steps 10 \
+    --num_train_epochs 10 \
+    --device "cpu"

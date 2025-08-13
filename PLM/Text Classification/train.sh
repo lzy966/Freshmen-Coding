@@ -1,0 +1,14 @@
+python train.py \
+    --model "bert-base-chinese" \
+    --train_path "D:/Data/master/Freshmen Coding Assignment/NLP/comment_classify/dev1.txt" \
+    --dev_path "D:/Data/master/Freshmen Coding Assignment/NLP/comment_classify/train1.txt" \
+    --save_dir "D:/Jupyter notebook file/硕士/PLM/Text Classification" \
+    --img_log_dir "D:/Jupyter notebook file/硕士/PLM/Text Classification" \
+    --img_log_name "BERT" \
+    --num_labels 8 \
+    --batch_size 16 \
+    --max_seq_len 128 \
+    --valid_steps 50 \
+    --logging_steps 10 \
+    --num_train_epochs 20 \
+    --device "cpu"
